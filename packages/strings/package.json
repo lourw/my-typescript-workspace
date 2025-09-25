@@ -30,7 +30,6 @@
     ],
     "targets": {
       "build-base": {
-	"cache": true,
         "command": "echo 'Running build-base for strings. This can be replaced with arbitrary commands.'"
       },
       "build": {
