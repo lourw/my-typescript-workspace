@@ -43,5 +43,6 @@
     "projects": ["!utils", "!@org/source"],
     "version": { "preVersionCommand": "npx nx run-many -t build" }
   },
-  "targetDefaults": { "test": { "dependsOn": ["^build"] } }
+  "targetDefaults": { "test": { "dependsOn": ["^build"] } },
+  "nxCloudId": "68d5880ae7456044bc64e7aa"
 }
