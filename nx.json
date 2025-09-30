@@ -14,7 +14,9 @@
     {
       "plugin": "@nx/js/typescript",
       "options": {
-        "typecheck": { "targetName": "typecheck" },
+        "typecheck": {
+          "targetName": "typecheck"
+        },
         "build": {
           "targetName": "build",
           "configName": "tsconfig.lib.json",
@@ -37,12 +39,24 @@
         "watchDepsTargetName": "watch-deps"
       }
     },
-    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } }
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
   ],
   "release": {
     "projects": ["!utils", "!@org/source"],
-    "version": { "preVersionCommand": "npx nx run-many -t build" }
+    "version": {
+      "preVersionCommand": "npx nx run-many -t build"
+    }
   },
-  "targetDefaults": { "test": { "dependsOn": ["^build"] } },
-  "nxCloudId": "68d5880ae7456044bc64e7aa"
+  "targetDefaults": {
+    "test": {
+      "dependsOn": ["^build"]
+    }
+  },
+  "nxCloudId": "68db2e174856e56bc4270661",
+  "nxCloudUrl": "https://staging.nx.app"
 }
